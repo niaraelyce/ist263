@@ -1,0 +1,22 @@
+body {font-family: Georgia, 'Times New Roman', Times, serif}
+h1 {color: aquamarine;}
+H2 {color: blueviolet}
+.special{color: pink}
+h1 {font-size: 16em;}
+h2 {font-size: 14em;}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) 
+  { background-color: pink; }
+ selector.evenrow {background-color: pink;}
+  
