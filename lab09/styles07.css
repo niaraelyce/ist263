@@ -1,0 +1,68 @@
+body {font-family: Georgia, 'Times New Roman', Times, serif}
+body {background-color:gray;}
+text {color: white;}
+link {color:#000;}
+h1 {color: #da509a;}
+h2 {color:#da509a;}
+p {color: #dddddd;}
+nav {background-color: #DA0C81; }
+nav a {color: #000}
+nav a:hover{background-color: pink; }
+nav {padding: 10px;}
+nav {margin-bottom: 30px;}
+
+
+.special{color: pink}
+h1 {font-size: 3em;}
+h2 {font-size: 1em;}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) 
+  { background-color: pink; }
+ selector.evenrow {background-color: pink;}
+
+ .parent {
+  width: 100vw;
+  height: 100vh;
+  /* Aligns the children items in a row direction */
+  display: flex;
+}
+
+.article1{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.article2{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+.article3{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(11, 207, 11);
+}
+ .flexbox2 { border-radius: 25px;
+  background: #ffff;
+  padding: 20px;
+  width: 300px;
+  height: 150px;
+  flex: 1;
+}
+
+  
+  .flexbox1 {flex: 3;}
+  .icon { width: 30px;}
+  .container { padding: 30px;}
