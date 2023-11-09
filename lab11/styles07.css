@@ -2,15 +2,16 @@ body {font-family: Georgia, 'Times New Roman', Times, serif}
 body {background-color:rgb(105, 9, 239);}
 text {color: white;}
 link {color:#000;}
-h1 {color: #da509a;}
-h2 {color:#da509a;}
+h1 {color: #eeb3d2;}
+h2 {color:#f9f6f9;}
+h3 {color: #eeb3d2;}
 p {color: #dddddd;}
-nav {background-color: #DA0C81; }
-nav a {color: #000}
+nav {background-color: #f20f88; }
+nav a {color: #f8f8f8}
 nav a:hover{background-color: pink; }
 nav {padding: 10px;}
 nav {margin-bottom: 30px;}
-
+.unorderlist {color: #dddd}
 
 .special{color: pink}
 h1 {font-size: 3em;}
