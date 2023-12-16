@@ -29,7 +29,7 @@
         background-color: #000000;
       }
       .row2 {float: right; padding: 50px;}
-      img {border: 5px solid #ed078d; float: left; margin: 20px;}
+      img {border: 5px solid #ed078d; float: left; margin: 20px; max-width: 300px; height: auto;}
       
       .topnav a {
         float: left;
@@ -213,19 +213,23 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
- <nav>
-        
-        <div class="topnav" id="myTopnav"></div>
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
             <a href="https://niaraelyce.github.io/ist263/project7/home.html" class="active" tabindex="1">Home</a>
             <a href="https://niaraelyce.github.io/ist263/project7/bookthelook.html" tabindex="2">Book An Appointment</a>
             <a href="https://niaraelyce.github.io/ist263/project7/thepolicy.html" class="active" tabindex="3">The Policy</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+            
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
-             </nav>
+            </a>
+        </div>
+        </nav>
+
       <header class="head"> MEET YOUR MUA</header>
       
       <div class="row2">
-      <img class="niarapic" src="../Images/meettheboss.png" alt="Niara" class="responsive2">
+      <img src="../Images/meettheboss.png" alt="Niara" class="responsive2">
         <h2> Hi, My Name is Niara!</h2>
         <p>It is so nice to finally meet you. Here is a bit more about me! I am a senior at Syracuse University 
         studying Information Management & technology with a concentration in Web Design. Fun Fact: I 
