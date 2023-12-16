@@ -1,35 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book The Look</title>
+    <title>Book An Appointment</title>
     <link rel="stylesheet" href="websitedraft.css">
+  
+
     <style>
-        body {
-             font-family: Verdana, Geneva, Tahoma, sans-serif,; 
+.img1 {border: 5px solid #ed078d; float: left;justify-content: space-evenly; margin-right: 10px; max-width: 15%;}
+.skip {background-color: #ffbf00;
+             padding: 5px; border: 1px solid #000000; 
+            text-decoration: none;
+        position: absolute;
+    top: 10px;
+     left: -999px;}
+     .skip:focus { left: 10px;
+
+     }   
+       body {font-family: 'Gruppo';
              background-color: #000000;
              color: #ffffff;
         }
-        img1 {justify-content: space-evenly; margin-right: 10px; max-width: 15%;}
+        h1 {font-size: 50px;}
+        h2 {font-size: 25px;}
+        .quote {float: right;}
+       .topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ed078d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
+        .img1 {float: right;}
         #slideshow-container {
-            background-color: #000000;
-            width: 1200px;
-            margin: auto; /* margin auto is centering this container */        
+            background-color: #060606;
+            width: 1000px;
+            margin: auto; /* margin auto is centering this container */   
+            max-width: 100%;
+            height: auto;     
         }
         #bigimages {margin-right: 100px;}
         #makeupinfo {padding: 100px;}
-        #thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
+        #thumbnails {width: 840px; margin: auto; padding-top: 20px; border: 1px solid #ed078d; max-width: 100%;
+  height: auto;}
         /* ^^ margin auto is centering this container */
         #naturalthumb, #cosmothumb, #lustrousthumb, #ninithumb
-        {width: 100px;}
+        {width: 200px; height: 300px;}
         #naturalbeatinfo, #cosmobeatinfo, #lustrousbeatinfo, #ninibeatinfo {display: none;}
         #naturalbeat, #cosmobeat, #lustrousbeat, #ninibeat {display: none;}
-        #bigimages {float: left;}
+        #bigimages {float: left;max-width: 100%; height: auto;}
         .clear {clear: both;}
+        p {font-size: 35px; justify-content: center;}
+        .row3 {font-size: 20px;}
+        .footerstuff {font-size: 20px;}
+        .quote {float: right; font-size: 20px;}
+        .example {
+  padding: 20px;
+  color: white;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
     </style>
     <script>
            function MakeupOff (){
@@ -41,10 +144,13 @@
            document.getElementById("lustrousbeatinfo").style.display = 'none';
            document.getElementById("ninibeat").style.display = 'none';
            document.getElementById("ninibeatinfo").style.display = 'none';
+           document.getElementById("makeupinfo").style.display = 'none';
           
 
 }
+           
            function NaturalOn (){
+        
                document.getElementById('naturalbeat').style.display = 'block';
                document.getElementById('naturalbeatinfo').style.display = 'block';
            }
@@ -60,65 +166,99 @@
                document.getElementById('ninibeat').style.display = 'block';
                document.getElementById('ninibeatinfo').style.display = 'block';
            }
+           function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
          
            
     </script>
 </head>
 <body>
-    <nav class="nav">
-        
-        <a href="http://niaraelyce.github.io/ist263/lab07">Home</a>
-        <a href="https://niaraelyce.github.io/ist263/lab06/contact.html"><span>&#124;</span>The Policy</a>
-        <a href="https://niaraelyce.github.io/ist263/lab06/skills.html"> <span>&#124;</span>Book an Appointment</a>
-        <link rel="shortcut icon" type="image/favicon.ico" href="favicon.ico">
+    <nav>
+
+    <img class="img1" src="../Images/ninilogo.jpg" alt="lips">
+    <div class="topnav" id="myTopnav">
+        <a href="https://niaraelyce.github.io/ist263/project7/home.html" class="active" tabindex="=1">Home</a>
+        <a href="https://niaraelyce.github.io/ist263/project7/bookthelook.html" tabindex="2">Book An Appointment</a>
+        <a href="https://niaraelyce.github.io/ist263/project7/thepolicy.html" class="active" tabindex="=3">The Policy</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
     </nav>
-
-
-        <img class="img1" src="../Images/ninilogo.png" alt="lips">
+      </div>
+      
+      <div style="padding-left:16px">
+      </div>
 
 <div id="slideshow-container">
     <div id="bigimages">
-        <img src="https://niaraelyce.github.io/ist263/Images/naturalbeat.jpg" alt="naturalbeat" id="naturalbeat">
-        <img src="https://niaraelyce.github.io/ist263/Images/cosmobeat.jpg" alt="cosmobeat" id="cosmobeat">
-        <img src="https://niaraelyce.github.io/ist263/Images/lustrousbeat.jpg" alt="lustrousbeat" id="lustrousbeat">
-        <img src="https://niaraelyce.github.io/ist263/Images/ninibeat.jpg" alt="ninibeat" id="ninibeat">
+        
+        <img src="https://niaraelyce.github.io/ist263/Images/naturalbeat.png" alt="naturalbeat" id="naturalbeat" width="700" height="800" class="responsive">
+        <img src="https://niaraelyce.github.io/ist263/Images/cosmobeat.jpg" alt="cosmobeat" id="cosmobeat" width="700" height="800" class="responsive">
+        <img src="https://niaraelyce.github.io/ist263/Images/lustrousbeat.jpg" alt="lustrousbeat" id="lustrousbeat" width="700" height="800" class="responsive">
+        <img src="https://niaraelyce.github.io/ist263/Images/ninibeat.jpg" alt="ninibeat" id="ninibeat" width="700" height="800" class="responsive">
         
     </div>
-    <div id="makeupinfo">        
-        <h1>Book The Look:</h1>
+    <div id="makeupinfo" onclick="MakeupOff();">        
+        <h1>BOOK THE LOOK:</h1>
+        <h2> Click to view our services, prices & descriptions!</h2>
+    </div>
+
         <div id="naturalbeatinfo" onclick="MakeupOff();">
-            <h2>THE NATURAL BEAT</h2>
+            <h1>THE NATURAL BEAT</h1>
             <h2>45 Minute Session: $60</h2>
             <p>Best for clients that desire a simple, yet beautiful natural look that highlights your natural beauty. Includes a flawless base of foundation, concealers, and powders paired with beautiful lashes and your choice of glossy lip.</p>
         </div>
         <div id="cosmobeatinfo" onclick="MakeupOff();">
-            <h2>THE COSMOPOLITAN BEAT</h2>
+            <h1>THE COSMOPOLITAN BEAT</h1>
             <h2> 60 Minute Session: $75</h2>
             <p>Best for clients that desire a more complex, yet stunning glam look that highlights your natural beauty. Includes a flawless base of foundation, concealers, and powders, paired with beautiful lashes & a glossy or nude lip. Also  includes an array of darker, more sultry shadows to create this glam look.</p>
         </div>
         <div id="lustrousbeatinfo" onclick="MakeupOff();">
-            <h2>THE LUSTROUS BEAT: $80</h2>
-            <h2> 80 Minute Session</h2>
+            <h1>THE LUSTROUS BEAT</h1>
+            <h2> 80 Minute Session: $80</h2>
             <p>Best for clients that desire the ultimate lustrous, yet beautiful glittery look that will highlight your natural beauty. Includes a flawless base of foundation, concealers, and powders, paired with beautiful lashes, a glossy lip or nude lip. You also will recieve an array of darker shadows that will pair with your choice of glitter/shimmery shadows.</p>
         </div>
         <div id="ninibeatinfo" onclick="MakeupOff();">
-            <h2>THE NINI BEAT: $TBA</h2>
-            <h2>90 Minute Session</h2>
+            <h1>THE NINI BEAT</h1>
+            <h2>90 Minute Session: $85</h2>
             <p>Best for clients that desire a look tailored to their vision, yet beautiful in nature as well as creativity. Includes a flawless base of foundation, concealers, and powders, paired with beautiful lashes and a glossy lip. Also includes your choice of colorful liners, loose pigment, or anything else your imagination can conjure up!</p>
         </div>
        
     </div>
     <div class="clear"></div>
     <div id="thumbnails">
-        <img src="https://niaraelyce.github.io/ist263/Images/naturalbeat.jpg" alt="naturalbeat" id="naturalthumb" onclick="MakeupOff(); NaturalOn();">
-        <img src="https://niaraelyce.github.io/ist263/Images/cosmobeat.jpg" alt="cosmobeat" id="cosmothumb" onclick="MakeupOff(); CosmoOn();">
-        <img src="https://niaraelyce.github.io/ist263/Images/lustrousbeat.jpg" alt="lustrousbeat" id="lustrousthumb" onclick="MakeupOff(); LustrousOn();">
-        <img src="https://niaraelyce.github.io/ist263/Images/ninibeat.jpg" alt="ninibeat" id="ninithumb" onclick="MakeupOff(); NiniOn();">
+       
+        <img src="https://niaraelyce.github.io/ist263/Images/naturalbeat.png" alt="naturalbeat" id="naturalthumb" onclick="MakeupOff(); NaturalOn();" class="responsive">
+        <img src="https://niaraelyce.github.io/ist263/Images/cosmobeat.jpg" alt="cosmobeat" id="cosmothumb" onclick="MakeupOff(); CosmoOn();" class="responsive">
+        <img src="https://niaraelyce.github.io/ist263/Images/lustrousbeat.jpg" alt="lustrousbeat" id="lustrousthumb" onclick="MakeupOff(); LustrousOn();" class="responsive">
+        <img src="https://niaraelyce.github.io/ist263/Images/ninibeat.jpg" alt="ninibeat" id="ninithumb" onclick="MakeupOff(); NiniOn();" class="responsive">
        
     </div>
 
 </div>
+<footer>
+    <hr>
+    <div class="row3">
+        <form action="https://formspree.io/f/xnqkodab" method="POST">
+            <label for="email">Your Email</label>
+            <input name="Email" id="email" type="email">
+            <button type="submit">Submit</button>
+          </form>
+        <h3>Follow Us!</h3>
+        <p class="footerstuff"> Instagram: @niniondabeat_</p>
+        <br>
+        <p class="footerstuff">Facebook: NINIONDABEAT</p>
+<br>
+<p class="quote">"Life isn't perfect but your make-up can be."<p>
+<p>&copy; 2023</p> 
 
+   </footer>
 </body>
 </html>
 

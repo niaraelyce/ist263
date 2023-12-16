@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <img class="img1" src="../Images/ninilogo.jpg" alt="lips">
+    </nav>
     <title>The Policy</title>
     <link rel="stylesheet" href="websitedraft.css">
+    
     <style>
+  .skip {background-color: #ffbf00;
+             padding: 5px; border: 1px solid #000000; 
+            text-decoration: none;
+        position: absolute;
+    top: 10px;
+     left: -999px;}
+     .skip:focus { left: 10px;
+
+     }
+  body {
+    font-family: 'Gruppo';font-size: 22px; background-color: #ffffff;
+}
+     
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ed078d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
+
   @media only screen and (min-width: 599px){
               
               .skip {background-color: #ffbf00;
@@ -20,33 +89,77 @@
             .skip:focus { left: 10px;}
 
 }
+img {border: 5px solid #ed078d;float: left;}
 .img1 {justify-content: space-evenly; margin-right: 10px; max-width: 15%;}
 .niarapic {float: left; display: flex;}
 .nav {float: right; padding: 10px; margin-bottom: 30px; display: block;}
-.thepolicy { border-radius: 1em; margin-bottom: 20px; margin-top: 20px;}
-.rules { border-radius: 1em; margin-bottom: 20px; margin-top: 20px;}
-.h2 {border-radius: 1em; margin-bottom: 20px; margin-top: 20px;}
-     .row1, .row2, .row3 {background-color:  rgb(245, 195, 237);}
-     .quote {float: right;}
+.thepolicy { border-radius: 1em; margin-bottom: 20px; margin-top: 20px; font-size: 100px;}
+.rules { border-radius: 1em; margin-bottom: 20px; margin-top: 20px; font-size: 20px; font-weight: bold;}
+.h2 {border-radius: 1em; margin-bottom: 20px; margin-top: 20px; font-size: 50px;}
+     .row1, .row3 { font-size: 20px;}
+     .quote {float: right; font-size: 20px;}
+     .example {
+  padding: 20px;
+  color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
+li {border-style: groove; border-color: #ed078d;
+  border-width: 5px 10px; margin-bottom: 40px;}
       </style>
+      <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+        </script>
 </head>
 <body>
-    
-    <nav class="nav">
+   
+    <nav>
         
-        <a href="http://niaraelyce.github.io/ist263/lab07">Home</a>
-        <a href="https://niaraelyce.github.io/ist263/lab06/contact.html"><span>&#124;</span>The Policy</a>
-        <a href="https://niaraelyce.github.io/ist263/lab06/skills.html"> <span>&#124;</span>Book an Appointment</a>
-        <link rel="shortcut icon" type="image/favicon.ico" href="favicon.ico">
-    </nav>
-
-
-        <img class="img1" src="../Images/ninilogo.png" alt="lips">
-
+        <div class="topnav" id="myTopnav">
+            <a href="https://niaraelyce.github.io/ist263/project7/home.html" class="active" tabindex="=1">Home</a>
+            <a href="https://niaraelyce.github.io/ist263/project7/bookthelook.html" tabindex="2">Book An Appointment</a>
+            <a href="https://niaraelyce.github.io/ist263/project7/thepolicy.html" class="active" tabindex="=3">The Policy</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+      </div>
+      
+      <div style="padding-left:16px">
+      </div>
 <br>
    <div class="row1">
     <h1 class="thepolicy">THE POLICY</h1>
-    <h2 class="h2"> The Ultimate Guide to Booking!</h2>
+    <h2 class="h2"> The Ultimate Guide to Booking</h2>
     <ul class="rules">
     <li>My site requires that all clients MUST make a deposit of $15 in order to complete the booking request. 
 This will go toward your total amount due at the end of your service. Please note that your appointment 
@@ -69,25 +182,16 @@ link where my address is listed for you to follow.</li>
 <li>Please do not hesitate to reach out with any questions!</li>
 </ul>
 </div>
-<div class="row2">
-<h1> MEET YOUR MUA</h1>
-<img class="niarapic" src="../Images/meettheboss.jpg" alt="Niara">
-<h2> Hi, My Name is Niara!</h2>
-<p>It is so nice to finally meet you. Here is a bit more about me! I am a senior at Syracuse University 
-studying Information Management & technology with a concentration in Web Design. Fun Fact: I 
-created this webpage as part of a final project in my web design class! I am a self-taught MUA (Make-up 
-artist) with 7 years of hands-on experience. I am working toward furthering my licensure education after 
-my graduation from college, in 2024. Whether you are an old client, a new one, or just curious, please 
-feel free to contact me anytime for any questions you may have. Happy Booking!</p>
-<br>
-</div>
 
+</div>
+<footer>
 <div class="row3">
 <form action="https://formspree.io/f/xnqkodab" method="POST">
     <label for="email">Your Email</label>
     <input name="Email" id="email" type="email">
     <button type="submit">Submit</button>
   </form>
+  <br>
 <h2>Follow Us!</h2>
 <p> Instagram: @niniondabeat_</p>
 <br>
@@ -99,12 +203,11 @@ feel free to contact me anytime for any questions you may have. Happy Booking!</
     <a href="https://niaraelyce.github.io/ist263/lab06/skills.html"> &#124; Book an Appointment </a>
 
 </div>
-<footer>
     <hr>
  
 
 <p class="quote">"Life isn't perfect but your make-up can be."<p>
-   <p>&copy; 2020</p> 
+   <p>&copy; 2023</p> 
 
    </footer>
 </body>

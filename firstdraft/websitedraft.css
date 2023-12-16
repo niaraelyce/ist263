@@ -8,3 +8,6 @@ h3 {color: #0a0a0a;}
 p {color: #070707;}
 nav {background-color: #faf7f9; }
 h1, h2, h3, p, li {font-family: 'DM Sans', sans-serif;}
+body {
+    font-family: 'Cormorant';font-size: 22px;
+}
