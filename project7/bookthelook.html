@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book The Look</title>
+    <link rel="stylesheet" href="websitedraft.css">
+    <style>
+        body {
+             font-family: Verdana, Geneva, Tahoma, sans-serif,; 
+             background-color: #000000;
+             color: #ffffff;
+        }
+        img1 {justify-content: space-evenly; margin-right: 10px; max-width: 15%;}
+        #slideshow-container {
+            background-color: #000000;
+            width: 1200px;
+            margin: auto; /* margin auto is centering this container */        
+        }
+        #bigimages {margin-right: 100px;}
+        #makeupinfo {padding: 100px;}
+        #thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
+        /* ^^ margin auto is centering this container */
+        #naturalthumb, #cosmothumb, #lustrousthumb, #ninithumb
+        {width: 100px;}
+        #naturalbeatinfo, #cosmobeatinfo, #lustrousbeatinfo, #ninibeatinfo {display: none;}
+        #naturalbeat, #cosmobeat, #lustrousbeat, #ninibeat {display: none;}
+        #bigimages {float: left;}
+        .clear {clear: both;}
+    </style>
+    <script>
+           function MakeupOff (){
+           document.getElementById("naturalbeat").style.display = 'none';
+           document.getElementById("naturalbeatinfo").style.display = 'none';
+           document.getElementById("cosmobeat").style.display = 'none';
+           document.getElementById("cosmobeatinfo").style.display = 'none';
+           document.getElementById("lustrousbeat").style.display = 'none';
+           document.getElementById("lustrousbeatinfo").style.display = 'none';
+           document.getElementById("ninibeat").style.display = 'none';
+           document.getElementById("ninibeatinfo").style.display = 'none';
+          
+
+}
+           function NaturalOn (){
+               document.getElementById('naturalbeat').style.display = 'block';
+               document.getElementById('naturalbeatinfo').style.display = 'block';
+           }
+           function CosmoOn (){
+               document.getElementById('cosmobeat').style.display = 'block';
+               document.getElementById('cosmobeatinfo').style.display = 'block';
+           }
+           function LustrousOn (){
+               document.getElementById('lustrousbeat').style.display = 'block';
+               document.getElementById('lustrousbeatinfo').style.display = 'block';
+           }
+           function NiniOn (){
+               document.getElementById('ninibeat').style.display = 'block';
+               document.getElementById('ninibeatinfo').style.display = 'block';
+           }
+         
+           
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        
+        <a href="http://niaraelyce.github.io/ist263/lab07">Home</a>
+        <a href="https://niaraelyce.github.io/ist263/lab06/contact.html"><span>&#124;</span>The Policy</a>
+        <a href="https://niaraelyce.github.io/ist263/lab06/skills.html"> <span>&#124;</span>Book an Appointment</a>
+        <link rel="shortcut icon" type="image/favicon.ico" href="favicon.ico">
+    </nav>
+
+
+        <img class="img1" src="../Images/ninilogo.png" alt="lips">
+
+<div id="slideshow-container">
+    <div id="bigimages">
+        <img src="https://laferger.github.io/ist263/images/naturalbeat.jpg" alt="naturalbeat" id="naturalbeat">
+        <img src="https://laferger.github.io/ist263/images/cosmobeat.jpg" alt="cosmobeat" id="cosmobeat">
+        <img src="https://laferger.github.io/ist263/images/lustrousbeat.jpg" alt="lustrousbeat" id="lustrousbeat">
+        <img src="https://laferger.github.io/ist263/images/ninibeat.jpg" alt="ninibeat" id="ninibeat">
+        
+    </div>
+    <div id="makeupinfo">        
+        <h1>Book The Look:</h1>
+        <div id="naturalbeatinfo" onclick="MakeupOff();">
+            <h2>THE NATURAL BEAT</h2>
+            <h2>45 Minute Session: $60</h2>
+            <p>Best for clients that desire a simple, yet beautiful natural look that highlights your natural beauty. Includes a flawless base of foundation, concealers, and powders paired with beautiful lashes and your choice of glossy lip.</p>
+        </div>
+        <div id="cosmobeatinfo" onclick="MakeupOff();">
+            <h2>THE COSMOPOLITAN BEAT</h2>
+            <h2> 60 Minute Session: $75</h2>
+            <p>Best for clients that desire a more complex, yet stunning glam look that highlights your natural beauty. Includes a flawless base of foundation, concealers, and powders, paired with beautiful lashes & a glossy or nude lip. Also  includes an array of darker, more sultry shadows to create this glam look.</p>
+        </div>
+        <div id="lustrousbeatinfo" onclick="MakeupOff();">
+            <h2>THE LUSTROUS BEAT: $80</h2>
+            <h2> 80 Minute Session</h2>
+            <p>Best for clients that desire the ultimate lustrous, yet beautiful glittery look that will highlight your natural beauty. Includes a flawless base of foundation, concealers, and powders, paired with beautiful lashes, a glossy lip or nude lip. You also will recieve an array of darker shadows that will pair with your choice of glitter/shimmery shadows.</p>
+        </div>
+        <div id="ninibeatinfo" onclick="MakeupOff();">
+            <h2>THE NINI BEAT: $TBA</h2>
+            <h2>90 Minute Session</h2>
+            <p>Best for clients that desire a look tailored to their vision, yet beautiful in nature as well as creativity. Includes a flawless base of foundation, concealers, and powders, paired with beautiful lashes and a glossy lip. Also includes your choice of colorful liners, loose pigment, or anything else your imagination can conjure up!</p>
+        </div>
+       
+    </div>
+    <div class="clear"></div>
+    <div id="thumbnails">
+        <img src="https://niaraelyce.github.io/ist263/images/naturalbeat.jpg" alt="naturalbeat" id="naturalthumb" onclick="MakeupOff(); NaturalOn();">
+        <img src="https://niaraelyce.github.io/ist263/images/cosmobeat.jpg" alt="cosmobeat" id="cosmothumb" onclick="MakeupOff(); CosmoOn();">
+        <img src="https://niaraelyce.github.io/ist263/images/lustrousbeat.jpg" alt="lustrousbeat" id="lustrousthumb" onclick="MakeupOff(); LustrousOn();">
+        <img src="https://niaraelyce.github.io/ist263/images/ninibeat.jpg" alt="ninibeat" id="ninithumb" onclick="MakeupOff(); NiniOn();">
+       
+    </div>
+
+</div>
+
+</body>
+</html>
+
