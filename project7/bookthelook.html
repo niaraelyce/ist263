@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
     <title>Book An Appointment</title>
     <link rel="stylesheet" href="websitedraft.css">
   
@@ -28,7 +28,11 @@
         h1 {font-size: 50px;}
         h2 {font-size: 25px;}
         .quote {float: right;}
-       .topnav {
+      
+        .topnav { overflow: hidden;background-color: #000000;}
+
+
+        .topnav {
   overflow: hidden;
   background-color: #000000;
 }
@@ -36,7 +40,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: #ffffff;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -44,7 +48,7 @@
 }
 
 .topnav a:hover {
-  background-color: #ffffff;
+  background-color: #ddd;
   color: black;
 }
 
@@ -76,7 +80,7 @@
     float: none;
     display: block;
     text-align: left;
-}
+  }
 }
         .img1 {float: right;}
         #slideshow-container {
@@ -166,7 +170,8 @@
                document.getElementById('ninibeat').style.display = 'block';
                document.getElementById('ninibeatinfo').style.display = 'block';
            }
-           function myFunction() {
+        
+            function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -177,23 +182,19 @@
          
            
     </script>
+    <nav>
+     <div class="topnav" id="myTopnav">
+        <a href="https://niaraelyce.github.io/ist263/project7/home.html" tabindex="1">Home</a>
+        <a href="https://niaraelyce.github.io/ist263/project7/bookthelook.html" class="active" tabindex="2">Book An Appointment</a>
+        <a href="https://niaraelyce.github.io/ist263/project7/thepolicy.html" tabindex="3">The Policy</a>
+        
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    </nav>
 </head>
 <body>
-    <nav>
-
-    <img class="img1" src="../Images/ninilogo.jpg" alt="lips">
-    <div class="topnav" id="myTopnav">
-        <a href="https://niaraelyce.github.io/ist263/project7/home.html" class="active" tabindex="1">Home</a>
-        <a href="https://niaraelyce.github.io/ist263/project7/bookthelook.html" tabindex="2">Book An Appointment</a>
-        <a href="https://niaraelyce.github.io/ist263/project7/thepolicy.html" class="active" tabindex="3">The Policy</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-        </div>
-            <i class="fa fa-bars"></i>
-      
-      <div style="padding-left:16px">
-      </div>
-    </nav>
-
 <div id="slideshow-container">
     <div id="bigimages">
         
